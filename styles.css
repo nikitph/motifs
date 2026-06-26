@@ -113,6 +113,7 @@ main {
 .compiler-section,
 .geometry-section,
 .intro-band,
+.author-section,
 .motif-body,
 .related-section,
 .motif-pager {
@@ -314,10 +315,168 @@ h1 {
 .intro-band p:last-child,
 .geometry-copy p,
 .motif-main p,
-.motif-side p {
+.motif-side p,
+.sic-copy p,
+.download-panel p {
   color: #40505d;
   font-size: 1.05rem;
   line-height: 1.75;
+}
+
+.sic-section {
+  position: relative;
+  scroll-margin-top: 78px;
+  padding-block: 6rem;
+  background:
+    linear-gradient(90deg, rgba(238, 247, 241, 0.78), rgba(255, 245, 223, 0.5), rgba(238, 246, 251, 0.78)),
+    rgba(255, 255, 255, 0.42);
+  border-block: 1px solid rgba(24, 34, 45, 0.08);
+}
+
+.sic-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(320px, 0.52fr);
+  gap: clamp(1.2rem, 4vw, 3rem);
+  width: min(var(--content-max), 100%);
+  margin-inline: auto;
+  align-items: stretch;
+}
+
+.sic-copy {
+  align-self: center;
+}
+
+.sic-copy h2 {
+  max-width: 760px;
+  margin-top: 0.65rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.4rem, 5vw, 5.8rem);
+  font-weight: 500;
+  line-height: 0.96;
+}
+
+.sic-copy p {
+  max-width: 720px;
+  margin-top: 1.25rem;
+}
+
+.download-panel {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid rgba(24, 34, 45, 0.14);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 24px 70px rgba(24, 34, 45, 0.08);
+}
+
+.download-label {
+  color: var(--page-accent);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.download-panel h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-height: 54px;
+  margin-top: 0.4rem;
+  padding: 0 1.1rem;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fffdfa;
+  font-weight: 800;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.download-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(24, 34, 45, 0.16);
+}
+
+.download-button span {
+  color: #a8dcc8;
+  font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+  font-size: 0.82rem;
+}
+
+.download-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.download-links a {
+  color: var(--page-accent);
+  font-weight: 800;
+  border-bottom: 1px solid rgba(47, 125, 104, 0.28);
+}
+
+.author-section {
+  scroll-margin-top: 78px;
+  padding: 6rem 0;
+}
+
+.author-letter {
+  max-width: 880px;
+  margin-inline: auto;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-left: 2px solid rgba(47, 125, 104, 0.34);
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.66), rgba(255, 255, 255, 0.2)),
+    rgba(255, 255, 255, 0.34);
+}
+
+.author-letter p {
+  color: #263744;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.18rem, 2vw, 1.48rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.72;
+}
+
+.author-letter .letter-kicker {
+  color: var(--page-accent);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.author-letter p + p {
+  margin-top: 1.15rem;
+}
+
+.author-letter .letter-signature {
+  margin-top: 2rem;
+  color: var(--ink);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-style: italic;
+  text-align: right;
+}
+
+.atlas-section,
+.compiler-section,
+.geometry-section {
+  scroll-margin-top: 78px;
 }
 
 .atlas-section,
@@ -607,7 +766,8 @@ h1 {
   .intro-band,
   .section-heading,
   .geometry-section,
-  .motif-body {
+  .motif-body,
+  .sic-inner {
     grid-template-columns: 1fr;
   }
 
@@ -632,6 +792,11 @@ h1 {
     height: 360px;
     opacity: 0.7;
   }
+
+  .sic-section,
+  .author-section {
+    padding-block: 4.5rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -644,6 +809,8 @@ h1 {
   .site-nav {
     width: 100%;
     justify-content: space-between;
+    gap: 0.55rem;
+    font-size: 0.86rem;
   }
 
   h1 {
@@ -662,6 +829,14 @@ h1 {
     width: 78vw;
     height: 260px;
     opacity: 0.55;
+  }
+
+  .sic-copy h2 {
+    font-size: clamp(2.5rem, 14vw, 4rem);
+  }
+
+  .author-letter {
+    padding-inline: 1.2rem;
   }
 
   .motif-grid,

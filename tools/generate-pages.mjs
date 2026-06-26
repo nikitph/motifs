@@ -30,9 +30,10 @@ const template = (motif) => `<!doctype html>
         <span>Motif Atlas</span>
       </a>
       <nav class="site-nav" aria-label="Primary">
+        <a href="../../#sic">SIC Skill</a>
         <a href="../../#atlas">Atlas</a>
         <a href="../../#compiler">Compiler</a>
-        <a href="../../#geometry">Geometry</a>
+        <a href="../../#author">Author</a>
       </nav>
     </header>
 

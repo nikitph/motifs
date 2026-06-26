@@ -42,8 +42,8 @@
               organizations, psychology, and civilization.
             </p>
             <div class="hero-actions" aria-label="Hero actions">
-              <a class="icon-link primary" href="#atlas"><span aria-hidden="true">01</span> Explore the atlas</a>
-              <a class="icon-link" href="#compiler"><span aria-hidden="true">-></span> See the compiler</a>
+              <a class="icon-link primary" href="#sic"><span aria-hidden="true">01</span> Download SIC</a>
+              <a class="icon-link" href="#atlas"><span aria-hidden="true">02</span> Explore the atlas</a>
             </div>
           </div>
           <div class="hero-orbit reveal" aria-hidden="true">
@@ -60,6 +60,87 @@
           what persists, what changes, what constrains change, what crosses boundaries,
           and what lets distant systems converge.
         </p>
+      </section>
+
+      <section id="sic" class="sic-section section-frame">
+        <div class="sic-inner">
+          <div class="sic-copy reveal">
+            <p class="section-kicker">Try the compiler</p>
+            <h2>The atlas is the map. SIC is the instrument.</h2>
+            <p>
+              The Motif Atlas presented here is the conceptual foundation, not the full machine.
+              The Systems Innovation Compiler is already a substantially more developed applied
+              framework built on top of it.
+            </p>
+            <p>
+              SIC combines the 32 motifs with primitive decomposition, innovation methods,
+              distortion analysis, institutional templates, validation procedures, and implementation
+              planning. It is designed to be pasted into an LLM and used on real systems.
+            </p>
+          </div>
+          <aside class="download-panel reveal" aria-label="Systems Innovation Compiler downloads">
+            <p class="download-label">LLM Skill Package</p>
+            <h3>Systems Innovation Compiler</h3>
+            <p>
+              Install the skill, give it a system or problem, and ask it to diagnose what is present,
+              what is weak, what is missing, and where innovation may be structurally possible.
+            </p>
+            <a class="download-button" href="${assetUrl("assets/sic/systems-innovation-compiler.zip")}" download>
+              <span aria-hidden="true">DL</span>
+              Download SIC package
+            </a>
+            <div class="download-links">
+              <a href="${assetUrl("assets/sic/sic_skill.md")}" download>Skill prompt</a>
+              <a href="${assetUrl("assets/sic/sic_readme.md")}" download>Installation notes</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="author" class="author-section">
+        <article class="author-letter reveal">
+          <p class="letter-kicker">Some words from the author</p>
+          <p>Hello, and thank you for being here.</p>
+          <p>
+            This project grew out of a question I have carried for a long time: what are the hidden
+            structures underneath the things we see every day? Beneath software, economics, biology,
+            organizations, psychology, governance, and culture, there seem to be recurring patterns
+            that quietly shape how systems behave.
+          </p>
+          <p>
+            For years, I felt the absence of a tool that could help me see those patterns clearly
+            across domains. The internet made knowledge accessible, but not always structurally
+            comparable. Working with LLMs helped push this search past a threshold. Moving across
+            subjects and systems, I began to see a recurring set of structural concerns: motifs that
+            combine to produce the architectures we recognize as knowledge, institutions, technologies,
+            and behavior.
+          </p>
+          <p>
+            The number I arrived at is thirty-two. I believe this atlas is comprehensive in a meaningful
+            empirical sense, but I do not claim the number itself is sacred. Someone thoughtful may
+            argue for thirty, or thirty-six, or a different decomposition altogether. That debate is
+            welcome. The deeper claim is that reality appears to be composed from a finite structural
+            alphabet, and that understanding this alphabet lets us compare, diagnose, and transfer
+            solutions across domains.
+          </p>
+          <p>
+            This site introduces the foundation, not the full machine. The Systems Innovation Compiler
+            is significantly more built out than the theory shown here. The atlas explains the structural
+            alphabet; the compiler is the applied engine that uses that alphabet to analyze and redesign
+            real systems.
+          </p>
+          <p>
+            So I would ask you to try it before dismissing it. Take a software system, a policy problem,
+            a market, an organization, a research question, or a product you are building. Run it
+            through the skill. Look at what is present, what is weak, what is absent, and what combinations
+            are doing the real work.
+          </p>
+          <p>
+            If SIC helps you understand a system more precisely, identify hidden failure modes, or
+            generate better interventions, then this work has done what it set out to do.
+          </p>
+          <p class="letter-signature">Nikit Phadke</p>
+        </article>
       </section>
 
       <section id="atlas" class="atlas-section">
