@@ -323,6 +323,14 @@ h1 {
   line-height: 1.75;
 }
 
+.download-panel .scope-note {
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(24, 34, 45, 0.1);
+  color: #55636e;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
 .sic-section {
   position: relative;
   scroll-margin-top: 78px;

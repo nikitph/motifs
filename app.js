@@ -77,6 +77,11 @@
               distortion analysis, institutional templates, validation procedures, and implementation
               planning. It is designed to be pasted into an LLM and used on real systems.
             </p>
+            <p>
+              The current skill package is focused on the software domain for demonstration purposes.
+              The underlying compiler structure is domain-general, and can be extended to economics,
+              governance, biology, organizations, and other complex systems.
+            </p>
           </div>
           <aside class="download-panel reveal" aria-label="Systems Innovation Compiler downloads">
             <p class="download-label">LLM Skill Package</p>
@@ -84,6 +89,9 @@
             <p>
               Install the skill, give it a system or problem, and ask it to diagnose what is present,
               what is weak, what is missing, and where innovation may be structurally possible.
+            </p>
+            <p class="scope-note">
+              Current demo scope: software systems. The framework is built to generalize beyond software.
             </p>
             <a class="download-button" href="${assetUrl("assets/sic/systems-innovation-compiler.zip")}" download>
               <span aria-hidden="true">DL</span>
